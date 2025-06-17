@@ -7,7 +7,7 @@ librerias de pandas para resolver las preguntas.
 import pandas as pd
 
 def pregunta_06():
-    tbl1 = pd.read_csv("/files/input/tbl1.tsv", sep="\t") 
+    tbl1 = pd.read_csv("files/input/tbl1.tsv", sep="\t") 
     unico = tbl1.groupby('c4')['c0'].max().sort_index()
     unico.index = unico.index.str.upper() 
     solo_letras = unico.index.tolist()

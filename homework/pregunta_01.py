@@ -8,10 +8,7 @@ import pandas as pd
 
 
 def pregunta_01():
-    import os
-    ruta_absoluta = os.path.abspath("../files/input/tbl0.tsv")
-    df_Tabla0 = pd.read_csv(ruta_absoluta, sep="\t")
-    #df_Tabla0 = pd.read_csv("/files/input/tbl0.tsv", sep="\t")
+    df_Tabla0 = pd.read_csv("files/input/tbl0.tsv", sep="\t")
     return len(df_Tabla0)
 
 """
