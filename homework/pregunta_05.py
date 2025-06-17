@@ -7,7 +7,7 @@ librerias de pandas para resolver las preguntas.
 import pandas as pd
 
 def pregunta_05():
-    tbl0 = pd.read_csv("../files/input/tbl0.tsv", sep="\t") 
+    tbl0 = pd.read_csv("/files/input/tbl0.tsv", sep="\t") 
     
     maximo = tbl0.groupby('c1')['c2'].max().sort_index()
     return maximo

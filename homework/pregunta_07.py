@@ -7,7 +7,7 @@ librerias de pandas para resolver las preguntas.
 import pandas as pd
 
 def pregunta_07():
-    tlb0 = pd.read_csv("../files/input/tbl0.tsv", sep='\t')
+    tlb0 = pd.read_csv("/files/input/tbl0.tsv", sep='\t')
     sumac2 = tlb0.groupby('c1')['c2'].sum().sort_index()
     return sumac2
 
