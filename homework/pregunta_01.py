@@ -10,7 +10,6 @@ def pregunta_01():
     df_Tabla0 = pd.read_csv("/files/input/tbl0.tsv", sep="\t")
     return len(df_Tabla0)
 
-print(pregunta_01())
 """
     ¿Cuál es la cantidad de filas en la tabla `tbl0.tsv`?
 
