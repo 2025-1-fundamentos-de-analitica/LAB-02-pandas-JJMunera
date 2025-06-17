@@ -8,17 +8,17 @@ import pandas as pd
 
 
 def pregunta_08():
-    tbl0 = pd.read_csv('/files/input/tbl0.tsv', sep='\t')
+    tbl0 = pd.read_csv('files/input/tbl0.tsv', sep='\t')
     tbl0['suma'] = tbl0['c0'] + tbl0['c2']
     return tbl0
 
-
+print(pregunta_08())
 """
     Agregue una columna llamada `suma` con la suma de `c0` y `c2` al
     data frame que contiene el archivo `tbl0.tsv`.
 
     Rta/
-         c0  c1   c2          c3  suma
+        c0  c1   c2          c3  suma
     0     0   E    1  1999-02-28     1
     1     1   A    2  1999-10-28     3
     2     2   B    5  1998-05-02     7
